@@ -19,12 +19,12 @@ export class FooterComponent implements OnInit {
   getFooter() {
     this._FooterService.getFooterData().subscribe({
       next: (data: any) => {
-        console.log(data);
         this.FooterData = data.data;
         this.footer = this.FooterData[0];
+
       },
       error: (err) => {
-        console.error(err);
+
       },
     });
   }

@@ -18,11 +18,10 @@ export class ServicesComponent implements OnInit {
   getFooter() {
     this._ServiceServiceService.getServiceData().subscribe({
       next: (data: any) => {
-        console.log(data);
         this.ServicesData = data.data;
       },
       error: (err) => {
-        console.error(err);
+
       },
     });
   }

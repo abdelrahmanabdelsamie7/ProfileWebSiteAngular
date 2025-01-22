@@ -12,7 +12,7 @@
       @for (item of BlogsData; track $index) {
       <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="2000">
         <div class="blog-entry shadow">
-          <a href="{{ item.link_url }}" target="_blank"><img src="{{ environmentUrl }}/app/public/{{ item.image }}"
+          <a href="{{ item.link_url }}" target="_blank"><img src="{{ item.image }}"
               alt="Image placeholder" class="img-fluid " height="400px"></a>
           <div class="blog-entry-text">
             <h3><a href="{{ item.link_url }}" target="_blank">{{ item.title }}</a></h3>

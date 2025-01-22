@@ -20,11 +20,10 @@ export class BlogComponent implements OnInit {
   getFooter() {
     this._BlogService.getBlogData().subscribe({
       next: (data: any) => {
-        console.log(data);
         this.BlogsData = data.data;
       },
       error: (err) => {
-        console.error(err);
+
       },
     });
   }

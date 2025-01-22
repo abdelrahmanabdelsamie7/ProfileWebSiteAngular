@@ -26,18 +26,17 @@ export class EducationComponent implements OnInit {
   getEducationData() {
     this._EdEducationService.getEducationData().subscribe({
       next: (data: any) => {
-        console.log(data);
+
         this.EducationData = data.data;
       },
       error: (err) => {
-        console.error(err);
+
       },
     });
   }
   getExperienceData() {
     this._ExperienceService.getExperienceData().subscribe({
       next: (data: any) => {
-        console.log(data);
         this.ExperienceData = data.data;
         this.ExperienceData.forEach((item: any) => {
           if (item.end_at === null) {
@@ -46,7 +45,6 @@ export class EducationComponent implements OnInit {
         });
       },
       error: (err) => {
-        console.error(err);
       },
     });
   }

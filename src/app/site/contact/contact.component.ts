@@ -23,7 +23,6 @@ export class ContactComponent {
   sendMsg(contactForm: FormGroup) {
     this.ContactService.addContactData(contactForm.value).subscribe({
       next: (data: any) => {
-        console.log(data);
         this.msg = 'شكرا لتواصلك معنا';
         contactForm.reset();
       },

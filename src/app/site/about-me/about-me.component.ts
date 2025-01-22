@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.css',
- 
+
 })
 export class AboutMeComponent implements OnInit {
   environmentUrl: string = environment.apiUrl;
@@ -21,11 +21,10 @@ export class AboutMeComponent implements OnInit {
   getAboutMeData() {
     this._AboutService.showSpecificAboutData('').subscribe({
       next: (data: any) => {
-        console.log(data);
         this.aboutData = data.data[0];
       },
       error: (err) => {
-        console.error(err);
+
       },
     });
   }
