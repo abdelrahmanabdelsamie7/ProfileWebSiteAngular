@@ -1,0 +1,30 @@
+<section class="site-section" id="section-blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        <div class="section-heading text-center">
+          <h2>Blog on <strong>Medium</strong></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      @for (item of BlogsData; track $index) {
+      <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="2000">
+        <div class="blog-entry shadow">
+          <a href="{{ item.link_url }}" target="_blank"><img src="{{ environmentUrl }}/app/public/{{ item.image }}"
+              alt="Image placeholder" class="img-fluid " height="400px"></a>
+          <div class="blog-entry-text">
+            <h3><a href="{{ item.link_url }}" target="_blank">{{ item.title }}</a></h3>
+            <p class="mb-4">{{ item.description }}</p>
+
+            <div class="meta">
+              <a href="{{ item.link_url }}" target="_blank" class="btn btn-secondary rounded-pill fs-6">Discover</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+<!-- Start Services Section  -->
+<section class="site-section pb-0" id="section-services">
+  <div class="container">
+
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <div class="section-heading text-center">
+          <h2>My <strong>Services</strong></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      @for (item of ServicesData; track $index) {
+      <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up" data-aos-duration="2000">
+        <div class="site-service-item site-animate shadow">
+          <span class="icon">
+            <span class="{{ item.icon }}"></span>
+          </span>
+          <h3 class="mb-4">{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+<!-- End Services Section  -->
