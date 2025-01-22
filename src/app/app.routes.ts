@@ -13,8 +13,8 @@ export const routes: Routes = [
     path: '',
     component: ProfileComponent,
     children: [
-      { path: '', redirectTo: 'Hero', pathMatch: 'full' },
-      { path: 'Hero', component: HeroSectionComponent }, 
+      { path: '', redirectTo: 'Hero', pathMatch: 'full' , title: 'Abdelrahman Abdelsamie' },
+      { path: 'Hero', component: HeroSectionComponent },
       { path: 'AboutMe', component: AboutMeComponent },
       { path: 'Blog', component: BlogComponent },
       { path: 'Contact', component: ContactComponent },
