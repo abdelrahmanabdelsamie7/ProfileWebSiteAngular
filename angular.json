@@ -27,23 +27,12 @@
             "styles": [
               "src/styles.css",
               "./public/css/animate.css",
-              "./public/css/flexslider.css",
               "./public/css/bootstrap.css",
               "./public/css/style.css",
-
               "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css",
               "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             ],
-            "scripts": [
-              "./public/js/jquery.min.js",
-              "./public/js/jquery-migrate-3.0.1.min.js",
-              "./public/js/popper.min.js",
-              "./public/js/bootstrap.min.js",
-              "./public/js/jquery.easing.1.3.js",
-              "./public/js/jquery.stellar.min.js",
-              "./public/js/jquery.waypoints.min.js",
-              "./public/js/custom.js"
-            ],
+            "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
